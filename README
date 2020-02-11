@@ -5,6 +5,7 @@ Terminología
 	- Producers
 		Envian mensajes a un exchange.
 
+	REF: https://github.com/celery/kombu/blob/master/kombu/entity.py#L55
 	- Exchanges
 		Los exchange se noombran y se pueden configurar para
 		utilizar uno de varios algoritmos de enrutamiento.
