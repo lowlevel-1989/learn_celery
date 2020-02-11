@@ -1,0 +1,15 @@
+TRANSPORT_ALIASES = {
+	'librabbitmq': 'kombu.transport.librabbitmq:Transport',
+	'memory': 'kombu.transport.memory:Transport',
+	'redis': 'kombu.transport.redis:Transport',
+}
+
+REF: https://github.com/celery/kombu/blob/16531285d51a76171bb61faf681af31f8f80ddd8/kombu/transport/__init__.py#L20
+
+
+- views
+
+	- 0.0.0.0:8000             <- publisher
+	- 0.0.0.0:8000/consumer    <- consumer
+
+REF: https://kombu.readthedocs.io/en/latest/userguide/examples.html
