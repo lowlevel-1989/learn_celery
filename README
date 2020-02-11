@@ -30,3 +30,5 @@ Terminología
 		- Fan-out exchange   <- si el binding no tiene router key.
 		- Topic   exchange   <- parecido a exp reg.
 		- Custom  exchange   <- creado por nosotros.
+
+REF: https://kombu.readthedocs.io/en/latest/introduction.html#terminology
