@@ -1,2 +1,32 @@
 kombu -> Advanced Message Queuing Protocol (AMQP)
 REF: https://github.com/celery/kombu
+
+Terminología
+	- Producers
+		Envian mensajes a un exchange.
+
+	- Exchanges
+		Los exchange se noombran y se pueden configurar para
+		utilizar uno de varios algoritmos de enrutamiento.
+
+		Los exchange enruta los mensajes a los consumers haciendo
+		coincidir la clave de enrutamiento en el mensaje con la
+		clave de enrutamiento que proporciona al consumer cuando
+		se vincula al exchange.
+
+	- Consumers
+		Los consumers declaran una cola (queue), se vinculan a
+		un exchange y recibe mensajes de este.
+
+	- Queues
+		La cola recibe los mensajes enviados a los exchanges. Las
+		colas son declaradas en los consumers.
+
+	- Routing keys
+		Todos los mensajes tiene un router key. La interpretacion
+		de los router key dependen del tipo de exchange.
+
+		- Direct  exchange   <- compara los key que sean identicos.
+		- Fan-out exchange   <- si el binding no tiene router key.
+		- Topic   exchange   <- parecido a exp reg.
+		- Custom  exchange   <- creado por nosotros.
